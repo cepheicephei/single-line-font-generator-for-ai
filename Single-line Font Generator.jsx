@@ -152,9 +152,8 @@ directoryGroup.orientation = "row";
 directoryGroup.alignChildren = "left";
 
 var directoryLabel = directoryGroup.add("statictext", undefined, "File:");
-// directoryLabel.size = [60, 20];
 
-directoryDefault = "";
+directoryDefault = "~/Desktop/Letters/glyphMap.svg";
 
 var directoryText = directoryGroup.add(
   "edittext",
@@ -177,7 +176,6 @@ var generateBtn = rightGroup.add("button", undefined, "Generate", {
 });
 
 generateBtn.onClick = function () {
-  // generateText(box.inputText.text);
   genText(inputText.text);
 };
 
@@ -284,7 +282,7 @@ function genText(textToGenerate) {
     textLayer.remove();
     win.pnl.progBar.value = 0;
     win.pnl.progBarLabel.text = "0%";
-    Window.alert("Select the glyphMap.svg file first!");
+    Window.alert("Glyph map not found.\nSelect the correct glyphMap.svg file.");
   }
 }
 
