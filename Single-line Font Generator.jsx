@@ -202,13 +202,13 @@ box.show();
 /* ---- OUTPUT ---- */
 
 function genText(textToGenerate) {
-  var textLayer = doc.layers.add();
-  textLayer.name = "Single-line Text";
-
-  var tempLayer = doc.layers.add();
-  tempLayer.name = "tempLayer";
-
   try {
+    var textLayer = doc.layers.add();
+    textLayer.name = "Single-line Text";
+
+    var tempLayer = doc.layers.add();
+    tempLayer.name = "tempLayer";
+
     var charMap = tempLayer.groupItems.createFromFile(File(directoryText.text));
 
     var glyphSize = sizeSlider.value * 2.8346456693;
@@ -280,6 +280,10 @@ function genText(textToGenerate) {
     }
     box.close();
   } catch (error) {
+    tempLayer.remove();
+    textLayer.remove();
+    win.pnl.progBar.value = 0;
+    win.pnl.progBarLabel.text = "0%";
     Window.alert("Select the glyphMap.svg file first!");
   }
 }
