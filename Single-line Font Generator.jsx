@@ -16,6 +16,26 @@ Date:     24. April, 2022
  
 **********************************************************/
 
+var settingsLoadFileDefault;
+settingsLoadFileDefault = new File(
+  "~/Documents/single-line font generator settings.settings"
+);
+
+var directoryDefault = "";
+
+if (settingsLoadFileDefault.exists) {
+  settingsLoadFileDefault.open("r");
+
+  var settingLoadDefault = settingsLoadFileDefault.read();
+  var mySettingsDefault = settingLoadDefault.split("|");
+
+  directoryDefault = mySettingsDefault[0];
+
+  settingsLoadFileDefault.close();
+} else {
+  directoryDefault = "~/Documents/glyphMap.svg";
+}
+
 var doc = app.activeDocument;
 
 /* ---- WINDOW ---- */
@@ -144,7 +164,7 @@ var glyphFilePanel = rightGroup.add("panel", undefined, "Glyph file location", {
 });
 glyphFilePanel.orientation = "column";
 glyphFilePanel.alignChildren = ["fill", "left"];
-glyphFilePanel.size = [330, 60];
+glyphFilePanel.size = [330, 100];
 
 //DIRECTORY
 var directoryGroup = glyphFilePanel.add("group");
@@ -153,7 +173,7 @@ directoryGroup.alignChildren = "left";
 
 var directoryLabel = directoryGroup.add("statictext", undefined, "File:");
 
-directoryDefault = "~/Desktop/Letters/glyphMap.svg";
+// directoryDefault = "~/Desktop/Letters/glyphMap.svg";
 
 var directoryText = directoryGroup.add(
   "edittext",
@@ -170,6 +190,13 @@ directoryButton.size = [25, 25];
 directoryButton.onClick = function () {
   directoryText.text = File.openDialog("Select the glyphMap.svg file.");
 };
+
+var saveDefaultGroup = glyphFilePanel.add("group");
+saveDefaultGroup.orientation = "row";
+saveDefaultGroup.alignChildren = "center";
+
+var saveDefault = saveDefaultGroup.add("checkbox", undefined, "Save file path");
+saveDefault.value = true;
 
 var generateBtn = rightGroup.add("button", undefined, "Generate", {
   name: "generate",
@@ -276,6 +303,20 @@ function genText(textToGenerate) {
         app.activeDocument.pathItems[x].remove();
       }
     }
+
+    if (saveDefault.value) {
+      var settingsSaveFileDefault;
+      settingsSaveFileDefault = new File(
+        "~/Documents/single-line font generator settings.settings"
+      );
+
+      settingsSaveFileDefault.open("w");
+      var settingSaveDefault = directoryText.text + "|";
+
+      settingsSaveFileDefault.write(settingSaveDefault);
+      settingsSaveFileDefault.close();
+    }
+    
     box.close();
   } catch (error) {
     tempLayer.remove();
