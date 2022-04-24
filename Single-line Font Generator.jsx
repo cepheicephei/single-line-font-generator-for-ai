@@ -139,6 +139,39 @@ strokeWeightSelector.onChange = function () {
   strokeWeightSelectorText.text = this.selection.text + " mm";
 };
 
+var glyphFilePanel = rightGroup.add("panel", undefined, "Glyph file location", {
+  borderStyle: "sunken",
+});
+glyphFilePanel.orientation = "column";
+glyphFilePanel.alignChildren = ["fill", "left"];
+glyphFilePanel.size = [330, 60];
+
+//DIRECTORY
+var directoryGroup = glyphFilePanel.add("group");
+directoryGroup.orientation = "row";
+directoryGroup.alignChildren = "left";
+
+var directoryLabel = directoryGroup.add("statictext", undefined, "File:");
+// directoryLabel.size = [60, 20];
+
+directoryDefault = "";
+
+var directoryText = directoryGroup.add(
+  "edittext",
+  undefined,
+  directoryDefault,
+  { readonly: true }
+);
+directoryText.characters = 16;
+
+var directoryButton = directoryGroup.add("button", undefined, "...", {
+  name: "Dir",
+});
+directoryButton.size = [25, 25];
+directoryButton.onClick = function () {
+  directoryText.text = File.openDialog("Select the glyphMap.svg file.");
+};
+
 var generateBtn = rightGroup.add("button", undefined, "Generate", {
   name: "generate",
 });
@@ -146,7 +179,6 @@ var generateBtn = rightGroup.add("button", undefined, "Generate", {
 generateBtn.onClick = function () {
   // generateText(box.inputText.text);
   genText(inputText.text);
-  box.close();
 };
 
 win = rightGroup.add("group");
@@ -176,76 +208,79 @@ function genText(textToGenerate) {
   var tempLayer = doc.layers.add();
   tempLayer.name = "tempLayer";
 
-  var charMap = tempLayer.groupItems.createFromFile(
-    File("C:/Users/danie/Desktop/Letters/charMap.svg")
-  );
+  try {
+    var charMap = tempLayer.groupItems.createFromFile(File(directoryText.text));
 
-  var glyphSize = sizeSlider.value * 2.8346456693;
-  var progBarStepSize = 100 / textToGenerate.length;
+    var glyphSize = sizeSlider.value * 2.8346456693;
+    var progBarStepSize = 100 / textToGenerate.length;
 
-  var startingPosition = {
-    x: 0,
-    y: 0,
-  };
-  startingPosition.x = 10;
-  startingPosition.y = -10;
+    var startingPosition = {
+      x: 0,
+      y: 0,
+    };
+    startingPosition.x = 10;
+    startingPosition.y = -10;
 
-  var nextXPosition = startingPosition.x;
+    var nextXPosition = startingPosition.x;
 
-  for (var i = 0; i < textToGenerate.length; i++) {
-    win.pnl.progBar.value += progBarStepSize;
-    win.pnl.progBarLabel.text = Math.floor(win.pnl.progBar.value) + "%";
-    box.update();
+    for (var i = 0; i < textToGenerate.length; i++) {
+      win.pnl.progBar.value += progBarStepSize;
+      win.pnl.progBarLabel.text = Math.floor(win.pnl.progBar.value) + "%";
+      box.update();
 
-    if (textToGenerate[i] === " ") {
+      if (textToGenerate[i] === " ") {
+        nextXPosition += glyphSize + distanceSlider.value;
+        continue;
+      } else if (textToGenerate[i] === "\n") {
+        nextXPosition = startingPosition.x;
+        startingPosition.y -= glyphSize + distanceSlider.value;
+        continue;
+      }
+
+      var _groupItem = charMap.groupItems
+        .getByName("charLayer")
+        .groupItems.getByName(returnCharacterType(textToGenerate[i]))
+        .duplicate(textLayer);
+
+      _groupItem.position = [nextXPosition, startingPosition.y];
+
+      _groupItem.width = glyphSize;
+      _groupItem.height = glyphSize;
+
+      var strokeWeight = strokeWeightSelector.selection.text * 2.8346456693;
+
+      var _pathItems = _groupItem.pathItems;
+      for (var j = 0; j < _pathItems.length; j++) {
+        var currentItem = _pathItems[j];
+
+        // SET STROKE OPTIONS FOR ALL PATHS
+        currentItem.strokeCap = StrokeCap.ROUNDENDCAP;
+        currentItem.strokeJoin = StrokeJoin.ROUNDENDJOIN;
+        currentItem.strokeWidth = strokeWeight;
+
+        // if (dashedCheckbox.value) {
+        //   currentItem.strokeDashes = [4, 4];
+        // }
+
+        // REMOVE HELPER PATHS (STEP 1)
+        if (currentItem.pathPoints.length <= 1) {
+          currentItem.remove();
+        }
+      }
+
       nextXPosition += glyphSize + distanceSlider.value;
-      continue;
-    } else if (textToGenerate[i] === "\n") {
-      nextXPosition = startingPosition.x;
-      startingPosition.y -= glyphSize + distanceSlider.value;
-      continue;
     }
+    tempLayer.remove();
 
-    var _groupItem = charMap.groupItems
-      .getByName("charLayer")
-      .groupItems.getByName(returnCharacterType(textToGenerate[i]))
-      .duplicate(textLayer);
-
-    _groupItem.position = [nextXPosition, startingPosition.y];
-
-    _groupItem.width = glyphSize;
-    _groupItem.height = glyphSize;
-
-    var strokeWeight = strokeWeightSelector.selection.text * 2.8346456693;
-
-    var _pathItems = _groupItem.pathItems;
-    for (var j = 0; j < _pathItems.length; j++) {
-      var currentItem = _pathItems[j];
-
-      // SET STROKE OPTIONS FOR ALL PATHS
-      currentItem.strokeCap = StrokeCap.ROUNDENDCAP;
-      currentItem.strokeJoin = StrokeJoin.ROUNDENDJOIN;
-      currentItem.strokeWidth = strokeWeight;
-
-      // if (dashedCheckbox.value) {
-      //   currentItem.strokeDashes = [4, 4];
-      // }
-
-      // REMOVE HELPER PATHS (STEP 1)
-      if (currentItem.pathPoints.length <= 1) {
-        currentItem.remove();
+    // REMOVE HELPER PATHS (STEP 2)
+    for (var x = 0; x < app.activeDocument.pathItems.length; x++) {
+      if (app.activeDocument.pathItems[x].length <= 1) {
+        app.activeDocument.pathItems[x].remove();
       }
     }
-
-    nextXPosition += glyphSize + distanceSlider.value;
-  }
-  tempLayer.remove();
-
-  // REMOVE HELPER PATHS (STEP 2)
-  for (var x = 0; x < app.activeDocument.pathItems.length; x++) {
-    if (app.activeDocument.pathItems[x].length <= 1) {
-      app.activeDocument.pathItems[x].remove();
-    }
+    box.close();
+  } catch (error) {
+    Window.alert("Select the glyphMap.svg file first!");
   }
 }
 
