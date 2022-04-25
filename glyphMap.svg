@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 26.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 994.3 469.3" style="enable-background:new 0 0 994.3 469.3;" xml:space="preserve">
+<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 994.3 649.6" style="enable-background:new 0 0 994.3 649.6;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#000000;stroke-width:0.7087;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st1{fill:none;stroke:#231F20;stroke-width:0.7087;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
+<g id="Layer_3">
+</g>
 <g id="charLayer">
 	<g id="uppercaseA">
 		<polyline class="st0" points="50,71.4 50,31.4 90,31.4 90,71.4 		"/>
@@ -19,7 +21,7 @@
 		<polyline class="st0" points="190,71.4 150,71.4 150,31.4 190,31.4 		"/>
 	</g>
 	<g id="uppercaseD">
-		<polygon class="st0" points="231.1,71.4 201.1,71.4 201.1,31.4 231.1,31.4 241.1,51.4 		"/>
+		<polygon class="st0" points="230,71.4 200,71.4 200,31.4 230,31.4 240,51.4 		"/>
 	</g>
 	<g id="uppercaseE">
 		<polyline class="st0" points="290,71.4 250,71.4 250,31.4 290,31.4 		"/>
@@ -65,8 +67,8 @@
 		<polyline class="st0" points="150,121.4 150,81.4 190,81.4 190,101.4 150,101.4 		"/>
 	</g>
 	<g id="uppercaseQ">
-		<rect x="201.1" y="81.4" class="st0" width="40" height="40"/>
-		<line class="st0" x1="221.1" y1="101.4" x2="241.1" y2="121.4"/>
+		<rect x="200" y="81.4" class="st0" width="40" height="40"/>
+		<line class="st0" x1="220" y1="101.4" x2="240" y2="121.4"/>
 	</g>
 	<g id="uppercaseR">
 		<polyline class="st0" points="250,121.4 250,81.4 290,81.4 290,101.4 250,101.4 		"/>
@@ -99,120 +101,236 @@
 	<g id="uppercaseZ">
 		<polyline class="st0" points="650,81.4 690,81.4 650,121.4 690,121.4 		"/>
 	</g>
-	<g id="number0">
-		<rect x="50" y="131.4" class="st0" width="40" height="40"/>
-		<line class="st0" x1="90" y1="131.4" x2="50" y2="171.4"/>
+	<g id="a">
+		<polyline class="st0" points="50,141.4 90,141.4 90,171.4 50,171.4 50,151.4 90,151.4 		"/>
+		<path class="st0" d="M50,131.4"/>
 	</g>
-	<g id="number1">
-		<path class="st0" d="M100,131.4"/>
-		<polyline class="st0" points="100,151.4 120,131.4 120,171.4 		"/>
-		<line class="st0" x1="100" y1="171.4" x2="140" y2="171.4"/>
+	<g id="b">
+		<polyline class="st0" points="100,131.4 100,171.4 140,171.4 140,151.4 100,151.4 		"/>
 	</g>
-	<g id="number2">
-		<polyline class="st0" points="150,141.4 150,131.4 190,131.4 190,141.4 150,171.4 190,171.4 190,161.4 		"/>
+	<g id="c">
+		<polyline class="st0" points="190,171.4 150,171.4 150,141.4 190,141.4 		"/>
+		<path class="st0" d="M150,131.4"/>
 	</g>
-	<g id="number3">
-		<polyline class="st0" points="201.1,131.4 241.1,131.4 231.1,151.4 241.1,171.4 201.1,171.4 		"/>
+	<g id="d">
+		<polyline class="st0" points="240,131.4 240,171.4 200,171.4 200,151.4 240,151.4 		"/>
 	</g>
-	<g id="number4">
-		<polyline class="st0" points="250,131.4 250,151.4 290,151.4 		"/>
-		<line class="st0" x1="280" y1="131.4" x2="280" y2="171.4"/>
+	<g id="e">
+		<polyline class="st0" points="290,171.4 250,171.4 250,141.4 290,141.4 290,151.4 250,151.4 		"/>
+		<path class="st0" d="M250,131.4"/>
 	</g>
-	<g id="number5">
-		<polyline class="st0" points="340,131.4 300,131.4 300,151.4 330,151.4 340,160.1 330,171.4 300,171.4 		"/>
+	<g id="f">
+		<polyline class="st0" points="310,171.4 310,131.4 340,131.4 		"/>
+		<line class="st0" x1="340" y1="141.4" x2="300" y2="141.4"/>
 	</g>
-	<g id="number6">
-		<polyline class="st0" points="390,131.4 350,131.4 350,171.4 390,171.4 390,151.4 350,151.4 		"/>
+	<g id="g">
+		<polyline class="st0" points="349.9,171.4 389.9,171.4 389.9,141.4 349.9,141.4 349.9,151.4 389.9,151.4 		"/>
+		<path class="st0" d="M349.9,131.4"/>
 	</g>
-	<g id="number7">
-		<polyline class="st0" points="400,131.4 440,131.4 400,171.4 		"/>
+	<g id="h">
+		<line class="st0" x1="400" y1="131.4" x2="400" y2="171.4"/>
+		<polyline class="st0" points="440,171.4 440,151.4 400,151.4 		"/>
 	</g>
-	<g id="number8">
-		<rect x="450" y="151.4" class="st0" width="40" height="20"/>
-		<polyline class="st0" points="450,151.4 450,131.4 490,131.4 490,151.4 		"/>
+	<g id="i">
+		<line class="st0" x1="470" y1="171.4" x2="470" y2="141.4"/>
+		<rect x="468" y="131.4" class="st0" width="4" height="4"/>
+		<path class="st0" d="M449.9,131.4"/>
+		<path class="st0" d="M489.9,171.4"/>
 	</g>
-	<g id="number9">
-		<polyline class="st0" points="540,151.4 500,151.4 500,131.4 540,131.4 540,171.4 500,171.4 		"/>
+	<g id="j">
+		<polyline class="st0" points="520.1,141.4 520,171.4 499.9,171.4 499.9,161.4 		"/>
+		<rect x="518.1" y="131.4" class="st0" width="4" height="4"/>
+		<path class="st0" d="M539.9,171.4"/>
 	</g>
-	<g id="ampersand">
-		<polyline class="st0" points="290,271.4 250,241.4 250,231.4 280,231.4 280,241.4 250,261.4 250,271.4 270,271.4 290,251.4 		"/>
+	<g id="k">
+		<line class="st0" x1="549.8" y1="171.4" x2="549.8" y2="131.4"/>
+		<polyline class="st0" points="569.8,151.4 549.8,161.4 569.8,171.4 		"/>
+		<path class="st0" d="M589.8,171.4"/>
 	</g>
-	<g id="apostrophe">
-		<path class="st0" d="M540,221.4"/>
-		<line class="st0" x1="520" y1="181.4" x2="520" y2="191.4"/>
-		<path class="st0" d="M500,181.4"/>
+	<g id="l">
+		<polyline class="st0" points="609.8,131.4 609.8,171.4 629.8,171.4 		"/>
+		<path class="st0" d="M639.8,171.4"/>
+		<path class="st0" d="M600,131.4"/>
 	</g>
-	<g id="asterisk">
-		<path class="st0" d="M390,221.4"/>
-		<path class="st0" d="M350,181.4"/>
-		<polyline class="st0" points="370,181.4 370,188.9 377.9,187.1 		"/>
-		<polyline class="st0" points="374.9,196.4 370,188.9 365.1,196.4 		"/>
-		<line class="st0" x1="362.1" y1="187.1" x2="370" y2="188.9"/>
+	<g id="m">
+		<polyline class="st0" points="650,151.4 690,151.4 690,171.4 		"/>
+		<line class="st0" x1="650" y1="171.4" x2="650" y2="141.4"/>
+		<line class="st0" x1="670" y1="151.4" x2="670" y2="171.4"/>
+		<path class="st0" d="M650,131.4"/>
 	</g>
-	<g id="atsymbol">
-		<polyline class="st0" points="240,271.4 200,271.4 200,231.4 240,231.4 240,258.5 225.7,258.5 225.7,245.5 214.3,245.5 
-			214.3,255.7 225.7,255.7 		"/>
+	<g id="n">
+		<polyline class="st0" points="58.5,201.4 78.5,201.4 78.5,221.4 		"/>
+		<line class="st0" x1="58.5" y1="221.4" x2="58.5" y2="191.4"/>
+		<path class="st0" d="M50,181.4"/>
+		<path class="st0" d="M90,221.4"/>
 	</g>
-	<g id="closedparenthesis">
-		<path class="st0" d="M140,321.4"/>
-		<path class="st0" d="M100,281.4"/>
-		<path class="st0" d="M120,321.4c0,0,10-3.9,10-20s-10-20-10-20"/>
-	</g>
-	<g id="colon">
-		<path class="st0" d="M190,221.4"/>
-		<path class="st0" d="M150,181.4"/>
-		<rect x="168.5" y="211.4" class="st0" width="3" height="3"/>
-		<rect x="168.5" y="199.4" class="st0" width="3" height="3"/>
-	</g>
-	<g id="comma">
-		<polyline class="st0" points="121.5,221.4 121.5,211.4 118.5,211.4 118.5,214.4 121.5,214.4 		"/>
+	<g id="o">
+		<rect x="110" y="201.4" class="st0" width="20" height="20"/>
 		<path class="st0" d="M100,181.4"/>
 		<path class="st0" d="M140,221.4"/>
 	</g>
-	<g id="dash">
-		<path class="st0" d="M340,221.4"/>
-		<line class="st1" x1="307" y1="201.4" x2="333" y2="201.4"/>
+	<g id="p">
+		<polyline class="st0" points="150,221.4 150,191.4 190,191.4 190,201.4 150,201.4 		"/>
+		<path class="st0" d="M150,181.4"/>
+	</g>
+	<g id="q">
+		<polyline class="st0" points="240,221.4 240,191.4 200,191.4 200,201.4 240,201.4 		"/>
+		<path class="st0" d="M200,181.4"/>
+	</g>
+	<g id="r">
+		<line class="st0" x1="260" y1="221.4" x2="259.9" y2="191.4"/>
+		<line class="st0" x1="260" y1="201.4" x2="280" y2="191.4"/>
+		<path class="st0" d="M250,181.4"/>
+		<path class="st0" d="M290,221.4"/>
+	</g>
+	<g id="s">
+		<polyline class="st0" points="340,191.4 300,191.4 300,206.4 340,206.4 340,221.4 300,221.4 		"/>
 		<path class="st0" d="M300,181.4"/>
 	</g>
-	<g id="dollarsign">
-		<polyline class="st0" points="390,236.4 350,236.4 350,251.4 390,251.4 390,266.4 350,266.4 		"/>
-		<line class="st0" x1="370" y1="231.4" x2="370" y2="271.4"/>
+	<g id="t">
+		<line class="st0" x1="350" y1="191.4" x2="390" y2="191.4"/>
+		<line class="st0" x1="370" y1="221.4" x2="370" y2="181.4"/>
 	</g>
-	<g id="eurosign">
-		<polyline class="st0" points="440,271.4 409.7,271.4 409.7,231.4 440,231.4 		"/>
-		<line class="st0" x1="425" y1="256.4" x2="400" y2="256.4"/>
-		<line class="st0" x1="425" y1="246.4" x2="400" y2="246.4"/>
+	<g id="u">
+		<polyline class="st0" points="400,191.4 400,221.4 440,221.4 440,191.4 		"/>
+		<path class="st0" d="M400,181.4"/>
 	</g>
-	<g id="equals">
-		<path class="st0" d="M490,221.4"/>
+	<g id="v">
+		<polyline class="st0" points="450,191.4 470,221.4 490,191.4 		"/>
 		<path class="st0" d="M450,181.4"/>
-		<line class="st0" x1="460" y1="207.7" x2="480" y2="207.7"/>
-		<line class="st0" x1="480" y1="195.1" x2="460" y2="195.1"/>
 	</g>
-	<g id="exclamationmark">
-		<path class="st0" d="M140,271.4"/>
-		<line class="st0" x1="120" y1="231.4" x2="120" y2="256.4"/>
+	<g id="w">
+		<polyline class="st0" points="500,191.4 500,221.4 520,191.4 540,221.4 540,191.4 		"/>
+		<path class="st0" d="M499.9,181.4"/>
+	</g>
+	<g id="x">
+		<line class="st0" x1="550" y1="191.4" x2="590" y2="221.4"/>
+		<line class="st0" x1="550" y1="221.4" x2="590" y2="191.4"/>
+		<path class="st0" d="M549.8,181.4"/>
+	</g>
+	<g id="y">
+		<polyline class="st0" points="600,191.4 620,206.4 620,221.4 		"/>
+		<line class="st0" x1="640" y1="191.4" x2="620" y2="206.4"/>
+		<path class="st0" d="M599.8,181.4"/>
+	</g>
+	<g id="z">
+		<polyline class="st0" points="650,191.4 690,191.4 650,221.4 690,221.4 		"/>
+		<path class="st0" d="M649.8,181.4"/>
+	</g>
+	<g id="number0">
+		<rect x="50" y="231.4" class="st0" width="40" height="40"/>
+		<line class="st0" x1="90" y1="231.4" x2="50" y2="271.4"/>
+	</g>
+	<g id="number1">
 		<path class="st0" d="M100,231.4"/>
-		<rect x="118.5" y="268.4" class="st0" width="3" height="3"/>
+		<polyline class="st0" points="100,251.4 120,231.4 120,271.4 		"/>
+		<line class="st0" x1="100" y1="271.4" x2="140" y2="271.4"/>
 	</g>
-	<g id="forwardslash">
-		<line class="st0" x1="440" y1="181.4" x2="400" y2="221.4"/>
+	<g id="number2">
+		<polyline class="st0" points="150,241.4 150,231.4 190,231.4 190,241.4 150,271.4 190,271.4 190,261.4 		"/>
 	</g>
-	<g id="greater">
-		<path class="st0" d="M240,321.4"/>
-		<path class="st0" d="M200,281.4"/>
-		<polyline class="st0" points="210,311.4 230,301.4 210,291.4 		"/>
+	<g id="number3">
+		<polyline class="st0" points="200,231.4 240,231.4 230,251.4 240,271.4 200,271.4 		"/>
 	</g>
-	<g id="hashsymbol">
-		<line class="st0" x1="300" y1="241.4" x2="340" y2="241.4"/>
-		<line class="st0" x1="300" y1="261.4" x2="340" y2="261.4"/>
-		<line class="st0" x1="305" y1="271.4" x2="315" y2="231.4"/>
-		<line class="st0" x1="325" y1="271.4" x2="335" y2="231.4"/>
+	<g id="number4">
+		<polyline class="st0" points="250,231.4 250,251.4 290,251.4 		"/>
+		<line class="st0" x1="280" y1="231.4" x2="280" y2="271.4"/>
 	</g>
-	<g id="less">
-		<polyline class="st0" points="180,291.4 160,301.4 180,311.4 		"/>
+	<g id="number5">
+		<polyline class="st0" points="340,231.4 300,231.4 300,251.4 330,251.4 340,260.1 330,271.4 300,271.4 		"/>
+	</g>
+	<g id="number6">
+		<polyline class="st0" points="390,231.4 350,231.4 350,271.4 390,271.4 390,251.4 350,251.4 		"/>
+	</g>
+	<g id="number7">
+		<polyline class="st0" points="400,231.4 440,231.4 400,271.4 		"/>
+	</g>
+	<g id="number8">
+		<rect x="450" y="251.4" class="st0" width="40" height="20"/>
+		<polyline class="st0" points="450,251.4 450,231.4 490,231.4 490,251.4 		"/>
+	</g>
+	<g id="number9">
+		<polyline class="st0" points="540,251.4 500,251.4 500,231.4 540,231.4 540,271.4 500,271.4 		"/>
+	</g>
+	<g id="ampersand">
+		<polyline class="st0" points="290,371.4 250,341.4 250,331.4 280,331.4 280,341.4 250,361.4 250,371.4 270,371.4 290,351.4 		"/>
+	</g>
+	<g id="apostrophe">
+		<path class="st0" d="M540,321.4"/>
+		<line class="st0" x1="520" y1="281.4" x2="520" y2="291.4"/>
+		<path class="st0" d="M500,281.4"/>
+	</g>
+	<g id="asterisk">
+		<path class="st0" d="M390,321.4"/>
+		<path class="st0" d="M350,281.4"/>
+		<polyline class="st0" points="370,281.4 370,288.9 377.9,287.1 		"/>
+		<polyline class="st0" points="374.9,296.4 370,288.9 365.1,296.4 		"/>
+		<line class="st0" x1="362.1" y1="287.1" x2="370" y2="288.9"/>
+	</g>
+	<g id="atsymbol">
+		<polyline class="st0" points="240,371.4 200,371.4 200,331.4 240,331.4 240,358.5 225.7,358.5 225.7,345.5 214.3,345.5 
+			214.3,355.7 225.7,355.7 		"/>
+	</g>
+	<g id="closedparenthesis">
+		<path class="st0" d="M140,421.4"/>
+		<path class="st0" d="M100,381.4"/>
+		<path class="st0" d="M120,421.4c0,0,10-3.9,10-20s-10-20-10-20"/>
+	</g>
+	<g id="colon">
 		<path class="st0" d="M190,321.4"/>
 		<path class="st0" d="M150,281.4"/>
+		<rect x="168.5" y="311.4" class="st0" width="3" height="3"/>
+		<rect x="168.5" y="299.4" class="st0" width="3" height="3"/>
+	</g>
+	<g id="comma">
+		<polyline class="st0" points="121.5,321.4 121.5,311.4 118.5,311.4 118.5,314.4 121.5,314.4 		"/>
+		<path class="st0" d="M100,281.4"/>
+		<path class="st0" d="M140,321.4"/>
+	</g>
+	<g id="dash">
+		<path class="st0" d="M340,321.4"/>
+		<line class="st1" x1="307" y1="301.4" x2="333" y2="301.4"/>
+		<path class="st0" d="M300,281.4"/>
+	</g>
+	<g id="dollarsign">
+		<polyline class="st0" points="390,336.4 350,336.4 350,351.4 390,351.4 390,366.4 350,366.4 		"/>
+		<line class="st0" x1="370" y1="331.4" x2="370" y2="371.4"/>
+	</g>
+	<g id="eurosign">
+		<polyline class="st0" points="440,371.4 409.7,371.4 409.7,331.4 440,331.4 		"/>
+		<line class="st0" x1="425" y1="356.4" x2="400" y2="356.4"/>
+		<line class="st0" x1="425" y1="346.4" x2="400" y2="346.4"/>
+	</g>
+	<g id="equals">
+		<path class="st0" d="M490,321.4"/>
+		<path class="st0" d="M450,281.4"/>
+		<line class="st0" x1="460" y1="307.7" x2="480" y2="307.7"/>
+		<line class="st0" x1="480" y1="295.1" x2="460" y2="295.1"/>
+	</g>
+	<g id="exclamationmark">
+		<path class="st0" d="M140,371.4"/>
+		<line class="st0" x1="120" y1="331.4" x2="120" y2="356.4"/>
+		<path class="st0" d="M100,331.4"/>
+		<rect x="118.5" y="368.4" class="st0" width="3" height="3"/>
+	</g>
+	<g id="forwardslash">
+		<line class="st0" x1="440" y1="281.4" x2="400" y2="321.4"/>
+	</g>
+	<g id="greater">
+		<path class="st0" d="M240,421.4"/>
+		<path class="st0" d="M200,381.4"/>
+		<polyline class="st0" points="210,411.4 230,401.4 210,391.4 		"/>
+	</g>
+	<g id="hashsymbol">
+		<line class="st0" x1="300" y1="341.4" x2="340" y2="341.4"/>
+		<line class="st0" x1="300" y1="361.4" x2="340" y2="361.4"/>
+		<line class="st0" x1="305" y1="371.4" x2="315" y2="331.4"/>
+		<line class="st0" x1="325" y1="371.4" x2="335" y2="331.4"/>
+	</g>
+	<g id="less">
+		<polyline class="st0" points="180,391.4 160,401.4 180,411.4 		"/>
+		<path class="st0" d="M190,421.4"/>
+		<path class="st0" d="M150,381.4"/>
 	</g>
 	<g id="notavailable">
 		<path class="st0" d="M790,71.4"/>
@@ -222,87 +340,87 @@
 		<rect x="754.8" y="36.2" class="st0" width="30.4" height="30.4"/>
 	</g>
 	<g id="openparenthesis">
-		<path class="st0" d="M90,321.4"/>
-		<path class="st0" d="M50,281.4"/>
-		<path class="st0" d="M70,281.4c0,0-10,3.9-10,20s10,20,10,20"/>
+		<path class="st0" d="M90,421.4"/>
+		<path class="st0" d="M50,381.4"/>
+		<path class="st0" d="M70,381.4c0,0-10,3.9-10,20s10,20,10,20"/>
 	</g>
 	<g id="percentsymbol">
-		<line class="st0" x1="150" y1="271.4" x2="190" y2="231.4"/>
-		<circle class="st0" cx="155" cy="236.4" r="5"/>
-		<circle class="st0" cx="185" cy="266.4" r="5"/>
+		<line class="st0" x1="150" y1="371.4" x2="190" y2="331.4"/>
+		<circle class="st0" cx="155" cy="336.4" r="5"/>
+		<circle class="st0" cx="185" cy="366.4" r="5"/>
 	</g>
 	<g id="period">
-		<path class="st0" d="M90,221.4"/>
-		<path class="st0" d="M50,181.4"/>
-		<rect x="68.5" y="218.4" class="st0" width="3" height="3"/>
+		<path class="st0" d="M90,321.4"/>
+		<path class="st0" d="M50,281.4"/>
+		<rect x="68.5" y="318.4" class="st0" width="3" height="3"/>
 	</g>
 	<g id="plus">
-		<path class="st0" d="M290,221.4"/>
-		<path class="st0" d="M250,181.4"/>
-		<line class="st0" x1="270" y1="191.4" x2="270" y2="211.4"/>
-		<line class="st0" x1="260" y1="201.4" x2="280" y2="201.4"/>
+		<path class="st0" d="M290,321.4"/>
+		<path class="st0" d="M250,281.4"/>
+		<line class="st0" x1="270" y1="291.4" x2="270" y2="311.4"/>
+		<line class="st0" x1="260" y1="301.4" x2="280" y2="301.4"/>
 	</g>
 	<g id="questionmark">
-		<path class="st0" d="M90,271.4"/>
-		<polyline class="st0" points="60,231.4 80,231.4 80,246.4 70,246.4 70,256.4 		"/>
-		<path class="st0" d="M50,231.4"/>
-		<rect x="68.5" y="268.4" class="st0" width="3" height="3"/>
+		<path class="st0" d="M90,371.4"/>
+		<polyline class="st0" points="60,331.4 80,331.4 80,346.4 70,346.4 70,356.4 		"/>
+		<path class="st0" d="M50,331.4"/>
+		<rect x="68.5" y="368.4" class="st0" width="3" height="3"/>
 	</g>
 	<g id="quotes">
-		<path class="st0" d="M590,221.4"/>
-		<line class="st0" x1="566" y1="181.4" x2="566" y2="191.4"/>
-		<line class="st0" x1="574" y1="181.4" x2="574" y2="191.4"/>
-		<path class="st0" d="M550,181.4"/>
+		<path class="st0" d="M590,321.4"/>
+		<line class="st0" x1="566" y1="281.4" x2="566" y2="291.4"/>
+		<line class="st0" x1="574" y1="281.4" x2="574" y2="291.4"/>
+		<path class="st0" d="M550,281.4"/>
 	</g>
 	<g id="semicolon">
-		<path class="st0" d="M240,221.4"/>
-		<path class="st0" d="M200,181.4"/>
-		<rect x="218.5" y="199.4" class="st0" width="3" height="3"/>
-		<polyline class="st0" points="221.5,221.4 221.5,211.4 218.5,211.4 218.5,214.4 221.5,214.4 		"/>
+		<path class="st0" d="M240,321.4"/>
+		<path class="st0" d="M200,281.4"/>
+		<rect x="218.5" y="299.4" class="st0" width="3" height="3"/>
+		<polyline class="st0" points="221.5,321.4 221.5,311.4 218.5,311.4 218.5,314.4 221.5,314.4 		"/>
 	</g>
 	<g id="openbracket">
-		<polyline class="st0" points="270,281.4 260,281.4 260,321.4 270,321.4 		"/>
-		<path class="st0" d="M250,281.4"/>
-		<path class="st0" d="M290,321.4"/>
+		<polyline class="st0" points="270,381.4 260,381.4 260,421.4 270,421.4 		"/>
+		<path class="st0" d="M250,381.4"/>
+		<path class="st0" d="M290,421.4"/>
 	</g>
 	<g id="closedbracket">
-		<polyline class="st0" points="320,321.4 330,321.4 330,281.4 320,281.4 		"/>
-		<path class="st0" d="M300,281.4"/>
-		<path class="st0" d="M340,321.4"/>
+		<polyline class="st0" points="320,421.4 330,421.4 330,381.4 320,381.4 		"/>
+		<path class="st0" d="M300,381.4"/>
+		<path class="st0" d="M340,421.4"/>
 	</g>
 	<g id="tilde">
-		<path class="st0" d="M640,321.4"/>
-		<path class="st1" d="M607,301.4c0,0,6.8-6.2,13,0s13,0,13,0"/>
-		<path class="st0" d="M600,281.4"/>
+		<path class="st0" d="M640,421.4"/>
+		<path class="st1" d="M607,401.4c0,0,6.8-6.2,13,0s13,0,13,0"/>
+		<path class="st0" d="M600,381.4"/>
 	</g>
 	<g id="underscore">
-		<line class="st1" x1="450" y1="321.4" x2="490" y2="321.4"/>
-		<path class="st0" d="M450,281.4"/>
+		<line class="st1" x1="450" y1="421.4" x2="490" y2="421.4"/>
+		<path class="st0" d="M450,381.4"/>
 	</g>
 	<g id="emdash">
-		<line class="st1" x1="650" y1="301.4" x2="690" y2="301.4"/>
-		<path class="st0" d="M650,281.4"/>
-		<path class="st0" d="M690,321.4"/>
+		<line class="st1" x1="650" y1="401.4" x2="690" y2="401.4"/>
+		<path class="st0" d="M650,381.4"/>
+		<path class="st0" d="M690,421.4"/>
 	</g>
 	<g id="circumflex">
-		<path class="st0" d="M540,321.4"/>
-		<polyline class="st1" points="507,296.7 520,281.4 533,296.7 		"/>
-		<path class="st0" d="M500,281.4"/>
+		<path class="st0" d="M540,421.4"/>
+		<polyline class="st1" points="507,396.7 520,381.4 533,396.7 		"/>
+		<path class="st0" d="M500,381.4"/>
 	</g>
 	<g id="bar">
-		<line class="st0" x1="570" y1="281.4" x2="570" y2="321.4"/>
-		<path class="st0" d="M550,281.4"/>
-		<path class="st0" d="M590,321.4"/>
+		<line class="st0" x1="570" y1="381.4" x2="570" y2="421.4"/>
+		<path class="st0" d="M550,381.4"/>
+		<path class="st0" d="M590,421.4"/>
 	</g>
 	<g id="closedbrace">
-		<path class="st0" d="M400,281.4"/>
-		<path class="st0" d="M440,321.4"/>
-		<path class="st0" d="M420,321.4c0,0,5-2.7,5-15c0-1.4,0-3.1,5-5l0,0c-5-1.9-5-3.6-5-5c0-12.3-5-15-5-15"/>
+		<path class="st0" d="M400,381.4"/>
+		<path class="st0" d="M440,421.4"/>
+		<path class="st0" d="M420,421.4c0,0,5-2.7,5-15c0-1.4,0-3.1,5-5l0,0c-5-1.9-5-3.6-5-5c0-12.3-5-15-5-15"/>
 	</g>
 	<g id="openbrace">
-		<path class="st0" d="M390,321.4"/>
-		<path class="st0" d="M350,281.4"/>
-		<path class="st0" d="M370,281.4c0,0-5,2.7-5,15c0,1.4,0,3.1-5,5l0,0c5,1.9,5,3.6,5,5c0,12.3,5,15,5,15"/>
+		<path class="st0" d="M390,421.4"/>
+		<path class="st0" d="M350,381.4"/>
+		<path class="st0" d="M370,381.4c0,0-5,2.7-5,15c0,1.4,0,3.1-5,5l0,0c5,1.9,5,3.6,5,5c0,12.3,5,15,5,15"/>
 	</g>
 </g>
 </svg>

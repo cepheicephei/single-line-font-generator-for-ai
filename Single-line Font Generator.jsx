@@ -316,7 +316,7 @@ function genText(textToGenerate) {
       settingsSaveFileDefault.write(settingSaveDefault);
       settingsSaveFileDefault.close();
     }
-    
+
     box.close();
   } catch (error) {
     tempLayer.remove();
@@ -333,7 +333,7 @@ function returnCharacterType(character) {
   if (character.charCodeAt() >= 65 && character.charCodeAt() <= 90) {
     return "uppercase" + character;
   } else if (character.charCodeAt() >= 97 && character.charCodeAt() <= 122) {
-    return "uppercase" + character.toUpperCase();
+    return character+"";
   } else if (character.charCodeAt() >= 48 && character.charCodeAt() <= 57) {
     return "number" + character;
   } else if (
