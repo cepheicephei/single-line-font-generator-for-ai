@@ -52,7 +52,7 @@ rightGroup.alignment = "top";
 
 var inputPanel = rightGroup.add("panel", undefined, "Input");
 
-var inputText = inputPanel.add("edittext", undefined, "The five boxing wizards jump quickly.", {
+var inputText = inputPanel.add("edittext", undefined, "The five boxing wizards jump quickly.\nSphinx of black quartz, judge my vow.\nHow vexingly quick daft zebras jump!", {
   multiline: true,
   scrollable: true,
 });
@@ -144,7 +144,7 @@ var strokeWeightSelector = strokeWeightPanel.add(
   strokeWeights
 );
 
-strokeWeightSelector.selection = 1;
+strokeWeightSelector.selection = 2;
 
 strokeWeightSelector.preferredSize.width = 195;
 strokeWeightSelector.preferredSize.height = 15;
@@ -165,6 +165,8 @@ var allUpperCaseCheckbox = settingsPanel.add(
   undefined,
   "Make all letters uppercase"
 );
+
+allUpperCaseCheckbox.value = true;
 
 var glyphFilePanel = rightGroup.add("panel", undefined, "Glyph file location", {
   borderStyle: "sunken",
