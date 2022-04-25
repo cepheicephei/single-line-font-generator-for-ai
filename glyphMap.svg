@@ -4,7 +4,8 @@
 	 viewBox="0 0 994.3 649.6" style="enable-background:new 0 0 994.3 649.6;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#000000;stroke-width:0.7087;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st1{fill:none;stroke:#231F20;stroke-width:0.7087;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#000000;stroke-width:0.705;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#231F20;stroke-width:0.7087;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
 <g id="Layer_3">
 </g>
@@ -106,14 +107,14 @@
 		<path class="st0" d="M50,131.4"/>
 	</g>
 	<g id="b">
-		<polyline class="st0" points="100,131.4 100,171.4 140,171.4 140,151.4 100,151.4 		"/>
+		<polyline class="st0" points="100,131.4 100,171.4 140,171.4 140,141.4 100,141.4 		"/>
 	</g>
 	<g id="c">
 		<polyline class="st0" points="190,171.4 150,171.4 150,141.4 190,141.4 		"/>
 		<path class="st0" d="M150,131.4"/>
 	</g>
 	<g id="d">
-		<polyline class="st0" points="240,131.4 240,171.4 200,171.4 200,151.4 240,151.4 		"/>
+		<polyline class="st0" points="240,131.4 240,171.4 200,171.4 200,141.4 240,141.4 		"/>
 	</g>
 	<g id="e">
 		<polyline class="st0" points="290,171.4 250,171.4 250,141.4 290,141.4 290,151.4 250,151.4 		"/>
@@ -124,12 +125,12 @@
 		<line class="st0" x1="340" y1="141.4" x2="300" y2="141.4"/>
 	</g>
 	<g id="g">
-		<polyline class="st0" points="349.9,171.4 389.9,171.4 389.9,141.4 349.9,141.4 349.9,151.4 389.9,151.4 		"/>
+		<polyline class="st0" points="349.9,171.4 389.9,171.4 389.9,141.4 349.9,141.4 349.9,161.4 389.9,161.4 		"/>
 		<path class="st0" d="M349.9,131.4"/>
 	</g>
 	<g id="h">
 		<line class="st0" x1="400" y1="131.4" x2="400" y2="171.4"/>
-		<polyline class="st0" points="440,171.4 440,151.4 400,151.4 		"/>
+		<polyline class="st0" points="440,171.4 440,141.4 400,141.4 		"/>
 	</g>
 	<g id="i">
 		<line class="st0" x1="470" y1="171.4" x2="470" y2="141.4"/>
@@ -138,34 +139,31 @@
 		<path class="st0" d="M489.9,171.4"/>
 	</g>
 	<g id="j">
-		<polyline class="st0" points="520.1,141.4 520,171.4 499.9,171.4 499.9,161.4 		"/>
-		<rect x="518.1" y="131.4" class="st0" width="4" height="4"/>
+		<polyline class="st0" points="539.9,141.4 539.8,171.4 499.9,171.4 499.9,161.4 		"/>
+		<rect x="535.9" y="131.4" class="st1" width="4" height="4"/>
 		<path class="st0" d="M539.9,171.4"/>
 	</g>
 	<g id="k">
 		<line class="st0" x1="549.8" y1="171.4" x2="549.8" y2="131.4"/>
-		<polyline class="st0" points="569.8,151.4 549.8,161.4 569.8,171.4 		"/>
+		<polyline class="st0" points="589.8,141.4 549.8,161.4 589.8,171.4 		"/>
 		<path class="st0" d="M589.8,171.4"/>
 	</g>
 	<g id="l">
-		<polyline class="st0" points="609.8,131.4 609.8,171.4 629.8,171.4 		"/>
+		<polyline class="st0" points="610,131.4 610,171.4 630,171.4 		"/>
 		<path class="st0" d="M639.8,171.4"/>
 		<path class="st0" d="M600,131.4"/>
 	</g>
 	<g id="m">
-		<polyline class="st0" points="650,151.4 690,151.4 690,171.4 		"/>
-		<line class="st0" x1="650" y1="171.4" x2="650" y2="141.4"/>
-		<line class="st0" x1="670" y1="151.4" x2="670" y2="171.4"/>
-		<path class="st0" d="M650,131.4"/>
+		<polyline class="st0" points="649.8,171.4 649.8,141.4 670,156.4 689.8,141.4 689.8,171.4 		"/>
+		<path class="st0" d="M649.8,131.4"/>
 	</g>
 	<g id="n">
-		<polyline class="st0" points="58.5,201.4 78.5,201.4 78.5,221.4 		"/>
-		<line class="st0" x1="58.5" y1="221.4" x2="58.5" y2="191.4"/>
+		<polyline class="st0" points="50,221.4 50,191.4 50,191.4 90,191.4 90,221.4 		"/>
 		<path class="st0" d="M50,181.4"/>
 		<path class="st0" d="M90,221.4"/>
 	</g>
 	<g id="o">
-		<rect x="110" y="201.4" class="st0" width="20" height="20"/>
+		<rect x="100" y="191.4" class="st0" width="40" height="30"/>
 		<path class="st0" d="M100,181.4"/>
 		<path class="st0" d="M140,221.4"/>
 	</g>
@@ -178,8 +176,8 @@
 		<path class="st0" d="M200,181.4"/>
 	</g>
 	<g id="r">
-		<line class="st0" x1="260" y1="221.4" x2="259.9" y2="191.4"/>
-		<line class="st0" x1="260" y1="201.4" x2="280" y2="191.4"/>
+		<line class="st0" x1="250" y1="221.4" x2="249.9" y2="191.4"/>
+		<line class="st0" x1="249.9" y1="201.4" x2="289.9" y2="191.4"/>
 		<path class="st0" d="M250,181.4"/>
 		<path class="st0" d="M290,221.4"/>
 	</g>
@@ -200,7 +198,7 @@
 		<path class="st0" d="M450,181.4"/>
 	</g>
 	<g id="w">
-		<polyline class="st0" points="500,191.4 500,221.4 520,191.4 540,221.4 540,191.4 		"/>
+		<polyline class="st0" points="500,191.4 500,221.4 520,201.4 540,221.4 540,191.4 		"/>
 		<path class="st0" d="M499.9,181.4"/>
 	</g>
 	<g id="x">
@@ -209,8 +207,8 @@
 		<path class="st0" d="M549.8,181.4"/>
 	</g>
 	<g id="y">
-		<polyline class="st0" points="600,191.4 620,206.4 620,221.4 		"/>
-		<line class="st0" x1="640" y1="191.4" x2="620" y2="206.4"/>
+		<polyline class="st0" points="600,191.4 599.8,206.4 639.8,206.4 639.8,221.4 630,221.4 		"/>
+		<line class="st0" x1="640" y1="191.4" x2="639.8" y2="206.4"/>
 		<path class="st0" d="M599.8,181.4"/>
 	</g>
 	<g id="z">
@@ -289,7 +287,7 @@
 	</g>
 	<g id="dash">
 		<path class="st0" d="M340,321.4"/>
-		<line class="st1" x1="307" y1="301.4" x2="333" y2="301.4"/>
+		<line class="st2" x1="307" y1="301.4" x2="333" y2="301.4"/>
 		<path class="st0" d="M300,281.4"/>
 	</g>
 	<g id="dollarsign">
@@ -335,8 +333,8 @@
 	<g id="notavailable">
 		<path class="st0" d="M790,71.4"/>
 		<path class="st0" d="M750,31.4"/>
-		<line class="st1" x1="754.8" y1="36.2" x2="785.2" y2="66.6"/>
-		<line class="st1" x1="785.2" y1="36.2" x2="754.8" y2="66.6"/>
+		<line class="st2" x1="754.8" y1="36.2" x2="785.2" y2="66.6"/>
+		<line class="st2" x1="785.2" y1="36.2" x2="754.8" y2="66.6"/>
 		<rect x="754.8" y="36.2" class="st0" width="30.4" height="30.4"/>
 	</g>
 	<g id="openparenthesis">
@@ -390,21 +388,21 @@
 	</g>
 	<g id="tilde">
 		<path class="st0" d="M640,421.4"/>
-		<path class="st1" d="M607,401.4c0,0,6.8-6.2,13,0s13,0,13,0"/>
+		<path class="st2" d="M607,401.4c0,0,6.8-6.2,13,0s13,0,13,0"/>
 		<path class="st0" d="M600,381.4"/>
 	</g>
 	<g id="underscore">
-		<line class="st1" x1="450" y1="421.4" x2="490" y2="421.4"/>
+		<line class="st2" x1="450" y1="421.4" x2="490" y2="421.4"/>
 		<path class="st0" d="M450,381.4"/>
 	</g>
 	<g id="emdash">
-		<line class="st1" x1="650" y1="401.4" x2="690" y2="401.4"/>
+		<line class="st2" x1="650" y1="401.4" x2="690" y2="401.4"/>
 		<path class="st0" d="M650,381.4"/>
 		<path class="st0" d="M690,421.4"/>
 	</g>
 	<g id="circumflex">
 		<path class="st0" d="M540,421.4"/>
-		<polyline class="st1" points="507,396.7 520,381.4 533,396.7 		"/>
+		<polyline class="st2" points="507,396.7 520,381.4 533,396.7 		"/>
 		<path class="st0" d="M500,381.4"/>
 	</g>
 	<g id="bar">
