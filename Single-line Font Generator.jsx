@@ -60,6 +60,7 @@ inputText.size = [300, 100];
 
 var settingsPanel = rightGroup.add("panel", undefined, "Settings");
 settingsPanel.orientation = "column";
+settingsPanel.alignChildren = "left";
 
 var distanceSliderPanel = settingsPanel.add(
   "panel",
@@ -158,6 +159,12 @@ strokeWeightSelectorText.preferredSize = [60, 20];
 strokeWeightSelector.onChange = function () {
   strokeWeightSelectorText.text = this.selection.text + " mm";
 };
+
+var allUpperCaseCheckbox = settingsPanel.add(
+  "checkbox",
+  undefined,
+  "Make all letters uppercase"
+);
 
 var glyphFilePanel = rightGroup.add("panel", undefined, "Glyph file location", {
   borderStyle: "sunken",
@@ -333,7 +340,11 @@ function returnCharacterType(character) {
   if (character.charCodeAt() >= 65 && character.charCodeAt() <= 90) {
     return "uppercase" + character;
   } else if (character.charCodeAt() >= 97 && character.charCodeAt() <= 122) {
-    return character+"";
+    if (allUpperCaseCheckbox.value) {
+      return "uppercase" + character.toUpperCase();
+    } else {
+      return character + "";
+    }
   } else if (character.charCodeAt() >= 48 && character.charCodeAt() <= 57) {
     return "number" + character;
   } else if (
