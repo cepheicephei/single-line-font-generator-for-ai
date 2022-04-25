@@ -52,7 +52,7 @@ rightGroup.alignment = "top";
 
 var inputPanel = rightGroup.add("panel", undefined, "Input");
 
-var inputText = inputPanel.add("edittext", undefined, "Lorem Ipsum", {
+var inputText = inputPanel.add("edittext", undefined, "The five boxing wizards jump quickly.", {
   multiline: true,
   scrollable: true,
 });
@@ -65,7 +65,7 @@ settingsPanel.alignChildren = "left";
 var distanceSliderPanel = settingsPanel.add(
   "panel",
   undefined,
-  "Distance between glyphs (points)"
+  "Glyph spacing (pt)"
 );
 distanceSliderPanel.orientation = "row";
 
