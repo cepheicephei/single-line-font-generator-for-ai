@@ -21,7 +21,8 @@ settingsLoadFileDefault = new File(
   "~/Documents/single-line font generator settings.settings"
 );
 
-var directoryDefault = "";
+var directoryDefault = "~/Documents/glyphMap.svg";
+var savedText = "The five boxing wizards jump quickly.\nSphinx of black quartz, judge my vow.\nHow vexingly quick daft zebras jump!";
 
 if (settingsLoadFileDefault.exists) {
   settingsLoadFileDefault.open("r");
@@ -29,11 +30,14 @@ if (settingsLoadFileDefault.exists) {
   var settingLoadDefault = settingsLoadFileDefault.read();
   var mySettingsDefault = settingLoadDefault.split("|");
 
-  directoryDefault = mySettingsDefault[0];
+  if (mySettingsDefault[0]) {
+    directoryDefault = mySettingsDefault[0];
+  }
+  if (mySettingsDefault[1]) {
+    savedText = mySettingsDefault[1];
+  }
 
   settingsLoadFileDefault.close();
-} else {
-  directoryDefault = "~/Documents/glyphMap.svg";
 }
 
 var doc = app.activeDocument;
@@ -51,12 +55,23 @@ rightGroup.alignChildren = "center";
 rightGroup.alignment = "top";
 
 var inputPanel = rightGroup.add("panel", undefined, "Input");
+inputPanel.orientation = "column";
+inputPanel.alignChildren = "left";
 
-var inputText = inputPanel.add("edittext", undefined, "The five boxing wizards jump quickly.\nSphinx of black quartz, judge my vow.\nHow vexingly quick daft zebras jump!", {
-  multiline: true,
-  scrollable: true,
-});
+var inputText = inputPanel.add(
+  "edittext",
+  undefined,
+  savedText,
+  {
+    multiline: true,
+    scrollable: true,
+  }
+);
 inputText.size = [300, 100];
+
+var saveInputTextCheckbox = inputPanel.add("checkbox", undefined, "Save text");
+
+saveInputTextCheckbox.value = true;
 
 var settingsPanel = rightGroup.add("panel", undefined, "Settings");
 settingsPanel.orientation = "column";
@@ -207,13 +222,25 @@ saveDefaultGroup.alignChildren = "center";
 var saveDefault = saveDefaultGroup.add("checkbox", undefined, "Save file path");
 saveDefault.value = true;
 
-var generateBtn = rightGroup.add("button", undefined, "Generate", {
+var btnGroup = rightGroup.add("group");
+btnGroup.orientation = "row";
+btnGroup.alignChildren = "center";
+
+var generateBtn = btnGroup.add("button", undefined, "Generate Text", {
   name: "generate",
 });
 
 generateBtn.onClick = function () {
   genText(inputText.text);
 };
+
+// var generateAlphabetBtn = btnGroup.add("button", undefined, "Generate Alphabet", {
+//   name: "generate",
+// });
+
+// generateAlphabetBtn.onClick = function () {
+//   genText("abcdefghijklm\nnopqrstuvwxyz");
+// };
 
 win = rightGroup.add("group");
 win.pnl = win.add("panel", [10, 10, 340, 100], "Progress");
@@ -313,18 +340,23 @@ function genText(textToGenerate) {
       }
     }
 
+    var settingsSaveFileDefault;
+    settingsSaveFileDefault = new File(
+      "~/Documents/single-line font generator settings.settings"
+    );
+
+    // REMOVE SETTINGS IF UNCHECKED !!
+
+    settingsSaveFileDefault.open("w");
     if (saveDefault.value) {
-      var settingsSaveFileDefault;
-      settingsSaveFileDefault = new File(
-        "~/Documents/single-line font generator settings.settings"
-      );
-
-      settingsSaveFileDefault.open("w");
       var settingSaveDefault = directoryText.text + "|";
-
       settingsSaveFileDefault.write(settingSaveDefault);
-      settingsSaveFileDefault.close();
     }
+    if (saveInputTextCheckbox.value) {
+      var inputText = textToGenerate + "|";
+      settingsSaveFileDefault.write(inputText);
+    }
+    settingsSaveFileDefault.close();
 
     box.close();
   } catch (error) {
