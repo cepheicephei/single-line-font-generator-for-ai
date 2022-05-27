@@ -1,2 +1,2 @@
 # Single-line Font Generator for Adobe Illustrator
-![v100](https://user-images.githubusercontent.com/64333959/170783324-34e8bbcd-c5fc-4c28-95c7-d127b1fef59e.png)
+![v100_readme](https://user-images.githubusercontent.com/64333959/170783473-7c56c2c8-6d42-4f0b-b7b2-345f259f0cee.png)
