@@ -37,6 +37,8 @@ Below is a screenshot of the script when opened in Illustrator:
 
 #### If you have any questions or comments, please send me an email at cepheix2@gmail.com
 
+---
+
 ### Next steps:
 1. Add revert to default values option
 2. Create alternate fonts
