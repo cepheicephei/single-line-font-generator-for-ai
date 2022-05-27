@@ -21,8 +21,9 @@ settingsLoadFileDefault = new File(
   "~/Documents/single-line font generator settings.settings"
 );
 
-var directoryDefault = "~/Documents/glyphMap.svg";
-var savedText = "The five boxing wizards jump quickly.\nSphinx of black quartz, judge my vow.\nHow vexingly quick daft zebras jump!";
+var defaultDirectory = "~/Documents/glyphMap.svg";
+var defaultText = "The five boxing wizards jump quickly.\nSphinx of black quartz, judge my vow.\nHow vexingly quick daft zebras jump!";
+var defaultSettings = "5,5,2,1"
 
 if (settingsLoadFileDefault.exists) {
   settingsLoadFileDefault.open("r");
@@ -31,14 +32,19 @@ if (settingsLoadFileDefault.exists) {
   var mySettingsDefault = settingLoadDefault.split("|");
 
   if (mySettingsDefault[0]) {
-    directoryDefault = mySettingsDefault[0];
+    defaultDirectory = mySettingsDefault[0];
   }
   if (mySettingsDefault[1]) {
-    savedText = mySettingsDefault[1];
+    defaultText = mySettingsDefault[1];
+  }
+  if (mySettingsDefault[2]) {
+    defaultSettings = mySettingsDefault[2];
   }
 
   settingsLoadFileDefault.close();
 }
+
+var defaultSettingsSplit = defaultSettings.split(",");
 
 var doc = app.activeDocument;
 
@@ -61,7 +67,7 @@ inputPanel.alignChildren = "left";
 var inputText = inputPanel.add(
   "edittext",
   undefined,
-  savedText,
+  defaultText,
   {
     multiline: true,
     scrollable: true,
@@ -70,7 +76,6 @@ var inputText = inputPanel.add(
 inputText.size = [300, 100];
 
 var saveInputTextCheckbox = inputPanel.add("checkbox", undefined, "Save text");
-
 saveInputTextCheckbox.value = true;
 
 var settingsPanel = rightGroup.add("panel", undefined, "Settings");
@@ -89,7 +94,7 @@ var distanceSlider = distanceSliderPanel.add("slider");
 distanceSlider.minvalue = 0;
 distanceSlider.maxvalue = 100;
 
-distanceSlider.value = 5;
+distanceSlider.value = defaultSettingsSplit[0];
 
 distanceSlider.preferredSize.width = 195;
 distanceSlider.preferredSize.height = 15;
@@ -113,7 +118,7 @@ var sizeSlider = sizeSliderPanel.add("slider");
 sizeSlider.minvalue = 1;
 sizeSlider.maxvalue = 100;
 
-sizeSlider.value = 5;
+sizeSlider.value = defaultSettingsSplit[1];
 
 sizeSlider.preferredSize.width = 195;
 sizeSlider.preferredSize.height = 15;
@@ -159,7 +164,7 @@ var strokeWeightSelector = strokeWeightPanel.add(
   strokeWeights
 );
 
-strokeWeightSelector.selection = 2;
+strokeWeightSelector.selection = defaultSettingsSplit[2].toString();
 
 strokeWeightSelector.preferredSize.width = 195;
 strokeWeightSelector.preferredSize.height = 15;
@@ -181,7 +186,11 @@ var allUpperCaseCheckbox = settingsPanel.add(
   "Make all letters uppercase"
 );
 
-allUpperCaseCheckbox.value = true;
+var defaultUppercase = +defaultSettingsSplit[3];
+allUpperCaseCheckbox.value = defaultUppercase;
+
+var saveSettingsCheckbox = settingsPanel.add("checkbox", undefined, "Save settings");
+saveSettingsCheckbox.value = true;
 
 var glyphFilePanel = rightGroup.add("panel", undefined, "Glyph file location", {
   borderStyle: "sunken",
@@ -197,12 +206,12 @@ directoryGroup.alignChildren = "left";
 
 var directoryLabel = directoryGroup.add("statictext", undefined, "File:");
 
-// directoryDefault = "~/Desktop/Letters/glyphMap.svg";
+// defaultDirectory = "~/Desktop/Letters/glyphMap.svg";
 
 var directoryText = directoryGroup.add(
   "edittext",
   undefined,
-  directoryDefault,
+  defaultDirectory,
   { readonly: true }
 );
 directoryText.characters = 16;
@@ -355,6 +364,10 @@ function genText(textToGenerate) {
     if (saveInputTextCheckbox.value) {
       var inputText = textToGenerate + "|";
       settingsSaveFileDefault.write(inputText);
+    }
+    if (saveSettingsCheckbox.value) {
+      var settingsSaveSettings = distanceSlider.value.toFixed() + "," + sizeSlider.value.toFixed() + "," + strokeWeightSelector.selection + "," + +allUpperCaseCheckbox.value + "|";
+      settingsSaveFileDefault.write(settingsSaveSettings);
     }
     settingsSaveFileDefault.close();
 
