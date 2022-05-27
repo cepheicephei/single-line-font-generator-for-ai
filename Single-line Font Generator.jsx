@@ -12,7 +12,7 @@ The font is proprietary and free to use.
 
 Author:   Daniel McCharen
 Website:  https://www.danielmccharen.com
-Date:     24. April, 2022
+Date:     27. May, 2022
  
 **********************************************************/
 
