@@ -18,7 +18,7 @@ Simply download the following two files:
 If you installed Illustrator in a different location, or if you are using OSX, the location will be different. If Illustrator is already running, you may need to restart it to see the script.
 
 ##### 2. glyphMap.svg
-Move the .svg file somewhere where it can easily be located. The script will automatically search for it in the Documents folder, but you can specify where you saved it later (when using the script).
+> Move the .svg file somewhere where it can easily be located. The script will automatically search for it in the Documents folder, but you can specify where you saved it later (when using the script).
 
 ---
 
@@ -26,9 +26,9 @@ Move the .svg file somewhere where it can easily be located. The script will aut
 1. Open Illustrator and create an empty (or open an existing) project.
 2. Select "File">"Scripts">"Single-line Font Generator".
 
-Below is a screenshot of the script when opened in Illustrator:  
+> Below is a screenshot of the script when opened in Illustrator:  
   
- ![v100_readme](https://user-images.githubusercontent.com/64333959/170783868-570152a8-594c-4c22-9d73-5a126d603917.png)
+> ![v100_readme](https://user-images.githubusercontent.com/64333959/170783868-570152a8-594c-4c22-9d73-5a126d603917.png)
 
 3. Enter the text you would like to generate in the "Input" box. ("Save text" will overwrite the default text)
 4. Set the spacing, size and stroke weight for the glyphs. ("Make all letters uppercase" is self-explanatory; "Save settings" will overwrite the default values)
