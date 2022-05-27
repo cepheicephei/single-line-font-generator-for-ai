@@ -8,7 +8,7 @@ I created a very rudimentary, proprietary font using very simple, mainly square 
 Here is an example of generated text, after being plotted on paper:  
 ![Artboard 1](https://user-images.githubusercontent.com/64333959/170790230-c30863aa-d835-4345-8824-665a0ad81a94.png)
 
-----
+---
 
 ### Installation
 Simply download the following two files:
