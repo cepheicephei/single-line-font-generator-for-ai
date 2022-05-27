@@ -9,15 +9,18 @@ This was created for use with cnc tools,
 all characters consist of single stroke paths.
 The font is proprietary and free to use.
 
+More information and how to use can be found on the repository:
 
-Author:   Daniel McCharen
-Website:  https://www.danielmccharen.com
-Date:     27. May, 2022
-Version:  1.0.0
+Repositoy:  https://github.com/cepheicephei/single-line-font-generator-for-ai
+
+Author:     Daniel McCharen
+Website:    https://www.danielmccharen.com
+Date:       27. May, 2022
+Version:    22.05
  
 **********************************************************/
 
-var versionNumber = "1.0.0";
+var versionNumber = "22.05";
 
 var settingsLoadFileDefault;
 settingsLoadFileDefault = new File(
@@ -358,27 +361,7 @@ function genText(textToGenerate) {
       }
     }
 
-    var settingsSaveFileDefault;
-    settingsSaveFileDefault = new File(
-      "~/Documents/single-line font generator settings.settings"
-    );
-
-    // REMOVE SETTINGS IF UNCHECKED !!
-
-    settingsSaveFileDefault.open("w");
-    if (saveDefault.value) {
-      var settingSaveDefault = directoryText.text + "|";
-      settingsSaveFileDefault.write(settingSaveDefault);
-    }
-    if (saveInputTextCheckbox.value) {
-      var inputText = textToGenerate + "|";
-      settingsSaveFileDefault.write(inputText);
-    }
-    if (saveSettingsCheckbox.value) {
-      var settingsSaveSettings = distanceSlider.value.toFixed() + "," + sizeSlider.value.toFixed() + "," + strokeWeightSelector.selection + "," + +allUpperCaseCheckbox.value + "|";
-      settingsSaveFileDefault.write(settingsSaveSettings);
-    }
-    settingsSaveFileDefault.close();
+   saveSettings(textToGenerate);
 
     box.close();
   } catch (error) {
@@ -391,6 +374,30 @@ function genText(textToGenerate) {
 }
 
 /* ---- HELPER FUNCTIONS ---- */
+
+function saveSettings(textToGenerate) {
+  var settingsSaveFileDefault;
+  settingsSaveFileDefault = new File(
+    "~/Documents/single-line font generator settings.settings"
+  );
+
+  // REMOVE SETTINGS IF UNCHECKED !!
+
+  settingsSaveFileDefault.open("w");
+  if (saveDefault.value) {
+    var settingSaveDefault = directoryText.text + "|";
+    settingsSaveFileDefault.write(settingSaveDefault);
+  }
+  if (saveInputTextCheckbox.value) {
+    var inputText = textToGenerate + "|";
+    settingsSaveFileDefault.write(inputText);
+  }
+  if (saveSettingsCheckbox.value) {
+    var settingsSaveSettings = distanceSlider.value.toFixed() + "," + sizeSlider.value.toFixed() + "," + strokeWeightSelector.selection + "," + +allUpperCaseCheckbox.value + "|";
+    settingsSaveFileDefault.write(settingsSaveSettings);
+  }
+  settingsSaveFileDefault.close();
+}
 
 function returnCharacterType(character) {
   if (character.charCodeAt() >= 65 && character.charCodeAt() <= 90) {
