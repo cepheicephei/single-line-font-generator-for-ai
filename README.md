@@ -13,4 +13,12 @@ Here is an example of generated text, after being plotted on paper:
 #### Installation
 Simply download the following two files:
 
+##### 1. Single-line Font Generator.jsx
+Move the .jsx file into the Illustrator Scripts folder. My Scripts folder location is C:\Program Files\Adobe\Adobe Illustrator 2022\Presets\en_US\Scripts
+If you installed Illustrator in a different location, or if you are using OSX, the location will be different.
+
+##### 2. glyphMap.svg
+Move the .svg file somewhere where it can easily be located. The script will automatically search for it in the Documents folder, but you can specify where you saved it later (when using the script).
+
+
 ![v100_readme](https://user-images.githubusercontent.com/64333959/170783868-570152a8-594c-4c22-9d73-5a126d603917.png)
