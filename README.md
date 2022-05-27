@@ -6,7 +6,7 @@ This project was created initially for use with my [homemade pen plotter](https:
 
 I created a very rudimentary, proprietary font using very simple, mainly square glyphs (including 26 letters and commonly used symbols and signs). I may update the script later with new fonts to choose from. You could also create your own glyphs and use them with the script.
 Here is an example of generated text, after being plotted on paper:  
-![example1](https://user-images.githubusercontent.com/64333959/170790082-39226119-b44e-4d58-aa9c-06b69284c8a6.png)
+![Artboard 1](https://user-images.githubusercontent.com/64333959/170790230-c30863aa-d835-4345-8824-665a0ad81a94.png)
 
 
 ![v100_readme](https://user-images.githubusercontent.com/64333959/170783868-570152a8-594c-4c22-9d73-5a126d603917.png)
