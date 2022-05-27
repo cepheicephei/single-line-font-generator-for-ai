@@ -13,7 +13,7 @@ Here is an example of generated text, after being plotted on paper:
 ### Installation
 Simply download the following two files:
 
-##### 1. single-line_font_generator.jsx
+##### 1. Single-line Font Generator.jsx
 > Move the .jsx file into the Illustrator Scripts folder. My Scripts folder location is C:\Program Files\Adobe\Adobe Illustrator 2022\Presets\en_US\Scripts
 If you installed Illustrator in a different location, or if you are using OSX, the location will be different. If Illustrator is already running, you may need to restart it to see the script.
 
