@@ -8,5 +8,9 @@ I created a very rudimentary, proprietary font using very simple, mainly square 
 Here is an example of generated text, after being plotted on paper:  
 ![Artboard 1](https://user-images.githubusercontent.com/64333959/170790230-c30863aa-d835-4345-8824-665a0ad81a94.png)
 
+### How to use the script
+
+#### Installation
+Simply download the following two files:
 
 ![v100_readme](https://user-images.githubusercontent.com/64333959/170783868-570152a8-594c-4c22-9d73-5a126d603917.png)
