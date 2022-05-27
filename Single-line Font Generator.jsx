@@ -13,8 +13,11 @@ The font is proprietary and free to use.
 Author:   Daniel McCharen
 Website:  https://www.danielmccharen.com
 Date:     27. May, 2022
+Version:  1.0.0
  
 **********************************************************/
+
+var versionNumber = "1.0.0";
 
 var settingsLoadFileDefault;
 settingsLoadFileDefault = new File(
@@ -256,7 +259,9 @@ win.pnl = win.add("panel", [10, 10, 340, 100], "Progress");
 win.pnl.progBarLabel = win.pnl.add("statictext", [20, 20, 320, 35], "0%");
 win.pnl.progBar = win.pnl.add("progressbar", [10, 45, 310, 60], 0, 100);
 
-var HyperGroup = rightGroup.add("group");
+var footerGroup = rightGroup.add("group");
+footerGroup.orientation = "column";
+var HyperGroup = footerGroup.add("group");
 HyperGroup.orientation = "row";
 var learnMoreLabel = HyperGroup.add("statictext", undefined, "Learn more:");
 learnMoreLabel.size = [70, 20];
@@ -264,8 +269,12 @@ var siteLabel = HyperGroup.add(
   "statictext",
   undefined,
   "https://www.danielmccharen.com"
-);
-siteLabel.size = [200, 20];
+  );
+  siteLabel.size = [200, 20];
+  
+  var versionGroup = footerGroup.add("group");
+  versionGroup.orientation = "row";
+  var versionLabel = versionGroup.add("statictext", undefined, "v." + versionNumber);
 
 box.show();
 
