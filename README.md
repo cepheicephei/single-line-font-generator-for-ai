@@ -1,1 +1,1 @@
-# single-line-font-generator-for-ai
+# Single-line Font Generator for Adobe Illustrator
