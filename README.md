@@ -20,6 +20,8 @@ If you installed Illustrator in a different location, or if you are using OSX, t
 ##### 2. glyphMap.svg
 Move the .svg file somewhere where it can easily be located. The script will automatically search for it in the Documents folder, but you can specify where you saved it later (when using the script).
 
+---
+
 ### Usage
 1. Open Illustrator and create an empty (or open an existing) project.
 2. Select "File">"Scripts">"Single-line Font Generator".
