@@ -249,9 +249,9 @@ generateBtn.onClick = function () {
   genText(inputText.text);
 };
 
-var revertToDefaultBtn = btnGroup.add("button", undefined, "Reset defaults", {
-  name: "resetDefaults",
-});
+var revertToDefaultBtn = btnGroup.add("button", undefined, "Reset defaults");
+revertToDefaultBtn.helpTip =
+  "Reset the input text and glyph settings to default values";
 
 revertToDefaultBtn.onClick = function () {
   revertToDefault();
@@ -420,7 +420,8 @@ function saveSettings(textToGenerate) {
 }
 
 function revertToDefault() {
-  inputText.text = "The five boxing wizards jump quickly.\nSphinx of black quartz, judge my vow.\nHow vexingly quick daft zebras jump!";
+  inputText.text =
+    "The five boxing wizards jump quickly.\nSphinx of black quartz, judge my vow.\nHow vexingly quick daft zebras jump!";
   sizeSlider.value = "5";
   sizeSliderText.text = "5";
   distanceSlider.value = "5";
