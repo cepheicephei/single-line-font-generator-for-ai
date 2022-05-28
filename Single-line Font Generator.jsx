@@ -28,8 +28,9 @@ settingsLoadFileDefault = new File(
 );
 
 var defaultDirectory = "~/Documents/glyphMap.svg";
-var defaultText = "The five boxing wizards jump quickly.\nSphinx of black quartz, judge my vow.\nHow vexingly quick daft zebras jump!";
-var defaultSettings = "5,5,2,1"
+var defaultText =
+  "The five boxing wizards jump quickly.\nSphinx of black quartz, judge my vow.\nHow vexingly quick daft zebras jump!";
+var defaultSettings = "5,5,2,1";
 
 if (settingsLoadFileDefault.exists) {
   settingsLoadFileDefault.open("r");
@@ -70,15 +71,10 @@ var inputPanel = rightGroup.add("panel", undefined, "Input");
 inputPanel.orientation = "column";
 inputPanel.alignChildren = "left";
 
-var inputText = inputPanel.add(
-  "edittext",
-  undefined,
-  defaultText,
-  {
-    multiline: true,
-    scrollable: true,
-  }
-);
+var inputText = inputPanel.add("edittext", undefined, defaultText, {
+  multiline: true,
+  scrollable: true,
+});
 inputText.size = [300, 100];
 
 var saveInputTextCheckbox = inputPanel.add("checkbox", undefined, "Save text");
@@ -195,7 +191,11 @@ var allUpperCaseCheckbox = settingsPanel.add(
 var defaultUppercase = +defaultSettingsSplit[3];
 allUpperCaseCheckbox.value = defaultUppercase;
 
-var saveSettingsCheckbox = settingsPanel.add("checkbox", undefined, "Save settings");
+var saveSettingsCheckbox = settingsPanel.add(
+  "checkbox",
+  undefined,
+  "Save settings"
+);
 saveSettingsCheckbox.value = true;
 
 var glyphFilePanel = rightGroup.add("panel", undefined, "Glyph file location", {
@@ -249,6 +249,14 @@ generateBtn.onClick = function () {
   genText(inputText.text);
 };
 
+var revertToDefaultBtn = btnGroup.add("button", undefined, "Reset defaults", {
+  name: "resetDefaults",
+});
+
+revertToDefaultBtn.onClick = function () {
+  revertToDefault();
+};
+
 // var generateAlphabetBtn = btnGroup.add("button", undefined, "Generate Alphabet", {
 //   name: "generate",
 // });
@@ -272,12 +280,16 @@ var siteLabel = HyperGroup.add(
   "statictext",
   undefined,
   "https://www.danielmccharen.com"
-  );
-  siteLabel.size = [200, 20];
-  
-  var versionGroup = footerGroup.add("group");
-  versionGroup.orientation = "row";
-  var versionLabel = versionGroup.add("statictext", undefined, "v." + versionNumber);
+);
+siteLabel.size = [200, 20];
+
+var versionGroup = footerGroup.add("group");
+versionGroup.orientation = "row";
+var versionLabel = versionGroup.add(
+  "statictext",
+  undefined,
+  "v." + versionNumber
+);
 
 box.show();
 
@@ -361,7 +373,7 @@ function genText(textToGenerate) {
       }
     }
 
-   saveSettings(textToGenerate);
+    saveSettings(textToGenerate);
 
     box.close();
   } catch (error) {
@@ -393,10 +405,28 @@ function saveSettings(textToGenerate) {
     settingsSaveFileDefault.write(inputText);
   }
   if (saveSettingsCheckbox.value) {
-    var settingsSaveSettings = distanceSlider.value.toFixed() + "," + sizeSlider.value.toFixed() + "," + strokeWeightSelector.selection + "," + +allUpperCaseCheckbox.value + "|";
+    var settingsSaveSettings =
+      distanceSlider.value.toFixed() +
+      "," +
+      sizeSlider.value.toFixed() +
+      "," +
+      strokeWeightSelector.selection +
+      "," +
+      +allUpperCaseCheckbox.value +
+      "|";
     settingsSaveFileDefault.write(settingsSaveSettings);
   }
   settingsSaveFileDefault.close();
+}
+
+function revertToDefault() {
+  inputText.text = "The five boxing wizards jump quickly.\nSphinx of black quartz, judge my vow.\nHow vexingly quick daft zebras jump!";
+  sizeSlider.value = "5";
+  sizeSliderText.text = "5";
+  distanceSlider.value = "5";
+  distanceSliderText.text = "5";
+  strokeWeightSelector.selection = "2";
+  allUpperCaseCheckbox.value = true;
 }
 
 function returnCharacterType(character) {
