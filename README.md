@@ -20,6 +20,10 @@ If you installed Illustrator in a different location, or if you are using OSX, t
 ##### 2. glyphMap.svg
 > Move the .svg file somewhere where it can easily be located. The script will automatically search for it in the Documents folder, but you can specify where you saved it later (when using the script).
 
+
+https://user-images.githubusercontent.com/64333959/170841312-a4f6b937-a82e-457e-9021-381e05a787a1.mp4
+
+
 ---
 
 ### Usage
