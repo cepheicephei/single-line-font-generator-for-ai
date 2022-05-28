@@ -40,6 +40,7 @@ If you installed Illustrator in a different location, or if you are using OSX, t
 ---
 
 ### Next steps:
-1. Add revert to default values option
-2. Create alternate fonts
-3. Add preview functionality
+1. Create alternate fonts
+2. Add preview functionality
+
+✓ Add reset to default settings
