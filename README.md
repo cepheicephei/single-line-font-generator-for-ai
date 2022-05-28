@@ -4,6 +4,10 @@
 This project was created initially for use with my [homemade pen plotter](https://www.instagram.com/cepheicephei/), to generate text and symbols that consist only of single-line paths. This way, instead of plotting the outlines of a given font, it draws only the letter itself:  
 ![Artboard 1@3x](https://user-images.githubusercontent.com/64333959/170789235-982ea461-2c60-4c1e-a9be-500af6cdefc7.png)
 
+See the tool in action here:  
+https://user-images.githubusercontent.com/64333959/170841357-2d132b1e-f4ce-4acb-b1d9-324b15c89ae8.mp4
+
+
 I created a very rudimentary, proprietary font using very simple, mainly square glyphs (including 26 letters and commonly used symbols and signs). I may update the script later with new fonts to choose from. You could also create your own glyphs and use them with the script.
 Here is an example of generated text, after being plotted on paper:  
 ![Artboard 1](https://user-images.githubusercontent.com/64333959/170790230-c30863aa-d835-4345-8824-665a0ad81a94.png)
@@ -19,10 +23,6 @@ If you installed Illustrator in a different location, or if you are using OSX, t
 
 ##### 2. glyphMap.svg
 > Move the .svg file somewhere where it can easily be located. The script will automatically search for it in the Documents folder, but you can specify where you saved it later (when using the script).
-
-
-https://user-images.githubusercontent.com/64333959/170841312-a4f6b937-a82e-457e-9021-381e05a787a1.mp4
-
 
 ---
 
