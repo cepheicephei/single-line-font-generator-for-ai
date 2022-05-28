@@ -28,12 +28,12 @@ If you installed Illustrator in a different location, or if you are using OSX, t
 
 > Below is a screenshot of the script when opened in Illustrator:  
   
-> ![v100_readme](https://user-images.githubusercontent.com/64333959/170783868-570152a8-594c-4c22-9d73-5a126d603917.png)
+> ![v100_readme2](https://user-images.githubusercontent.com/64333959/170805572-d3cd9666-322d-4ed3-9fb0-ac2ca0706d1f.png)
 
 3. Enter the text you would like to generate in the "Input" box. (*"Save text"* will overwrite the default text)
 4. Set the spacing, size and stroke weight for the glyphs. (*"Make all letters uppercase"* is self-explanatory; *"Save settings"* will overwrite the default values)
 5. Find the glyphMap.svg file location on your machine. (*"Save file path"* will overwrite the default file path)
-6. Hit *Generate Text* and see your single-line text as paths in your project!
+6. Hit *Generate Text* and see your single-line text as paths in your project! (*"Reset defaults"* will reset all values back to default)
 
 #### If you have any questions or comments, please send me an email at cepheix2@gmail.com
 
