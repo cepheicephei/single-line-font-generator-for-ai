@@ -43,4 +43,4 @@ If you installed Illustrator in a different location, or if you are using OSX, t
 1. Create alternate fonts
 2. Add preview functionality
 
-✓ Add reset to default settings
+  ✓ Add reset to default settings
