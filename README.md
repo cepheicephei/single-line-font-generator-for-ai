@@ -5,6 +5,8 @@
 https://user-images.githubusercontent.com/64333959/170841357-2d132b1e-f4ce-4acb-b1d9-324b15c89ae8.mp4
 
 
+---
+
 This project was created initially for use with my [homemade pen plotter](https://www.instagram.com/cepheicephei/), to generate text and symbols that consist only of single-line paths. This way, instead of plotting the outlines of a given font, it draws only the letter itself:  
 ![Artboard 1@3x](https://user-images.githubusercontent.com/64333959/170789235-982ea461-2c60-4c1e-a9be-500af6cdefc7.png)
 
